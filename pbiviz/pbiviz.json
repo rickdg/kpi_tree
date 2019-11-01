@@ -1,0 +1,35 @@
+{
+  "visual": {
+    "name": "kpi_tree",
+    "displayName": "Advanced KPI Tree",
+    "guid": "FCB64197A074475B35C21C09AB529C74",
+    "visualClassName": "Visual",
+    "version": "1.0.4",
+    "description": "Custom visual that transforms data into tree structure.",
+    "supportUrl": "https://github.com/victurtle/kpitree",
+    "gitHubUrl": "https://github.com/victurtle/kpitree"
+  },
+  "apiVersion": "2.5.0",
+  "author": {
+    "name": "Tang Quoc Thai",
+    "email": "tang.q.thai@gmail.com"
+  },
+  "coauthor": {
+    "name": "Nguyen Van Duc",
+    "email": "vanduc.dn@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/file-saver/dist/FileSaver.min.js",
+    "node_modules/js-base64/base64.min.js",
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js",
+    "node_modules/d3/d3.min.js",
+    "node_modules/powerbi-models/dist/models.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}

@@ -1,0 +1,229 @@
+{
+    "dataRoles": [
+        {
+            "name": "category",
+            "kind": "Grouping",
+            "displayName": "Category Levels"
+        },
+        {
+            "name": "value",
+            "kind": "Measure",
+            "displayName": "Data Value"
+        },
+        {
+            "name": "color",
+            "kind": "Measure",
+            "displayName": "Color"
+        }
+    ],
+    "objects": {
+        "general": {
+            "displayName": "General",
+            "displayNameKey": "formattingGeneral",
+            "properties": {
+                "filter": {
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        },
+        "KPITreeSettings": {
+            "displayName": "KPITree settings",
+            "properties": {
+                "showMeasure": {
+                    "displayName": "Show measure",
+                    "type": {
+                        "bool": true 
+                    }
+                },
+                "showLimit": {
+                    "displayName": "Children limit",
+                    "type": {
+                        "numeric": true 
+                    }
+                },
+                "defaultDrillDown": {
+                    "displayName": "Default drill-down",
+                    "type": {
+                        "numeric": true    
+                    }
+                },
+                "drillBlank": {
+                    "displayName": "Drill into blank",
+                    "type": {
+                        "bool": true 
+                    }
+                },
+                "drillEmpty": {
+                    "displayName": "Drill into empty",
+                    "type": {
+                        "bool": true 
+                    }
+                }
+            }
+        },"BlockAnnotation": {
+            "displayName": "Annotation settings",
+            "properties": {
+                "R1":{
+                    "displayName": "Line 1",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "R2":{
+                    "displayName": "Line 2",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "R3":{
+                    "displayName": "Line 3",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "Legend": {
+            "displayName": "Legend settings",
+            "properties": {
+                "enable":{
+                    "displayName": "Enable",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "L1":{
+                    "displayName": "Line 1",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "L2":{
+                    "displayName": "Line 2",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "L3":{
+                    "displayName": "Line 3",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "L4":{
+                    "displayName": "Line 4",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "KPITreeFormat": {
+            "displayName": "KPITree formatting",
+            "properties": {
+                "boxbg": {
+                    "displayName": "Box background",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "lines": {
+                    "displayName": "Lines",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "rx": {
+                    "displayName": "Smaller radius",
+                    "type": {
+                        "numeric": true 
+                    }
+                },
+                "Rx": {
+                    "displayName": "Bigger radius",
+                    "type": {
+                        "numeric": true 
+                    }
+                }
+            }
+        },
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 10000
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        { "bind": { "to": "value"}},
+                        { "bind": { "to": "color"}}
+                    ]
+                }
+            }
+        }
+    ]
+}

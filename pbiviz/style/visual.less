@@ -1,0 +1,124 @@
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  em {
+      background: yellow;
+      padding: 5px;
+      
+  }
+}
+
+
+.box {width: 100px; height: 68px;  border: 1px solid black !important;}
+
+.box text {text-anchor: middle; font-size: 13px; font-weight: bold;text-align: center ;fill: white}
+.boxhead {font-weight:bold;text-align: center;}
+.boxheadOnclick {text-anchor: middle; font-size: 13px; font-weight: bold;color: black}
+.box:hover .percentage {visibility: visible; }
+.box:hover .value {visibility: hidden; }
+.box:hover {visibility: visible; }
+
+
+.drillCrc {fill: #e8ecf2; }
+.nextCrc {fill: #e8ecf2; }
+.prevCrc {fill: #e8ecf2; }
+.drillCrc, .nextCrc, .prevCrc {opacity: 1; }
+.drillBtn:hover .drillCrc, .nextBtn:hover .nextCrc, .prevBtn:hover .prevCrc {opacity: 1; }
+.arrow {stroke: black; stroke-width: 1.2; fill: none; }
+.drillBtn:hover .arrow, .nextBtn:hover .arrow, .prevBtn:hover .arrow {stroke: black; }
+
+.tooltipBox {fill: darkblue; opacity: 0.95; }
+.tooltipText {fill: whitesmoke; }
+
+.svg {
+height:700px;padding: 10px; display: block; min-width:99%;background: rgb(230, 217, 217) transparent;
+}
+
+#analysisData {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  border: 0.5px solid black;
+
+}
+
+#analysisData td{
+  border: 1px solid black;
+  padding: 0px;
+  font-size: 11px;
+  height: 16px;
+  width: 25%;
+}
+
+#analysisData th {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 1px solid black;
+  font-size: 11px;
+}
+
+
+#annotation {
+  font-size:11px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+  line-height: 15px;
+}
+
+
+#legend {
+border-spacing: 0px;
+font-size: 12px;
+}
+
+.green {
+background-color: #39a31f;
+}
+
+.red {
+background-color: #fc4949;
+}
+
+.gray {
+background-color: #BFC0C2;
+}
+
+.yellow {
+background-color: #fcdb32;
+}
+
+tr.red {
+background-color: #fc4949;
+border: 1px solid black;
+color: white;
+font-size: 12px
+}
+
+tr.green {
+background-color: #39a31f;
+border: 1px solid black;
+color: white;
+font-size: 12px
+}
+
+tr.yellow {
+background-color: #e3cd0b;
+border: 1px solid black;
+color: white;
+font-size: 12px
+}
+
+tr.gray {
+background-color: #BFC0C2;
+border: 1px solid black;
+color: white;
+font-size: 12px
+}
+
+
+.td { padding: 0px }
